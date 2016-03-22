@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.web.bind.annotation.*;
-import org.apache.commons.io.IOUtils.*;
+//import org.apache.commons.io.IOUtils.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -19,14 +19,12 @@ public class TestController {
     private final int age = 18;
     File file = new File("/Users/Davide/Desktop/Roba/images/blue.png");
 
-    /*
     @RequestMapping("/test")
     public Test test(@RequestParam(value="name", defaultValue="Mario") String name, @RequestParam(value="surname", defaultValue="Rossi") String surname, @RequestParam(value="age", defaultValue="18") int age) {
         return new Test(name, surname, age);
     }
-    */
 
-
+    /*
     @RequestMapping(value = "/files/{file_name}", method = RequestMethod.GET)
 	public void getFile(@PathVariable("file_name") String fileName, HttpServletResponse response) {
     try {
@@ -38,6 +36,7 @@ public class TestController {
     } catch (IOException ex) {
       throw new RuntimeException("IOError writing file to output stream");
     }
-
-}
+    }
+    */
+    
 }
